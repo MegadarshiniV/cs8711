@@ -22,6 +22,8 @@ padding-top:60px;
 <label for="came">City Name</label>  
 <input type="text" id="cname" name="cname" /> 
 <input type="submit" value="Submit"/>
+ {% if error is defined and error %}
+					<br><br><span class="alert alert-danger">Error: Please enter valid city name.</span></br>
 </form>
 </body>  
 </html>  

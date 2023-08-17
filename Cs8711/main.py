@@ -11,7 +11,7 @@ def index():
     if cname:
       weatherAPIKey= '0cdf9b5c30bf1e5197a1703f20b5d14d'
       url="https://api.openweathermap.org/data/2.5/weather?q="+cname+"&appid=" + weatherApiKey
-            weatherData = requests.get(url).json()
+      weatherData = requests.get(url).json()
     else:
       error = 1
   return render_template('index.html', data = weatherData, cityName = cityName, error = error)

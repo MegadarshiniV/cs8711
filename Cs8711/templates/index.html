@@ -18,7 +18,7 @@ padding-top:60px;
  <title>Sign up</title>  
 </head>  
 <body>  
-<form>
+<form action="{{ url_for("index")}}" method="post">
 <label for="came">City Name</label>  
 <input type="text" id="cname" name="cname" /> 
 <input type="submit" value="Submit"/>
